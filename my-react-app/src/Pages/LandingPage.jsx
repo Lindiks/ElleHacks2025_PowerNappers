@@ -6,7 +6,7 @@ const LandingPage = () => {
     <div>
       <h1>Landing Page</h1>
       <nav>
-        <Link to="/connect">Connct Page</Link>
+        <Link to="/connect">Connect Page</Link>
       </nav>
     </div>
 
