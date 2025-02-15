@@ -1,2 +1,11 @@
 # ElleHacks2025_PowerNappers
-Elle 
+Running React Website commands:
+
+## cd my-react-app
+
+## npm install
+
+## npm run dev
+
+## navigate to `http://localhost:####/` in browser
+
