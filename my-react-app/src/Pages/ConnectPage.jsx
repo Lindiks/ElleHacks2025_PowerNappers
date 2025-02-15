@@ -1,5 +1,5 @@
 import React from 'react';
-import Tags from '../Components/Tags.jsx';
+
 import SideBar from '../Components/SideBar.jsx';
 import "../style/ContentPage.css"
 
