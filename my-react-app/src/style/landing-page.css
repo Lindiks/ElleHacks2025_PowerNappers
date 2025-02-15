@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* existing styles */
+.landing-page {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* rest of your CSS */
+
+
+.landing-page {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .left-side {
+    flex: 0.4; /* 40% of the width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6em;
+  }
+  
+  .left-side h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-family: "Noto Sans Gujarati", serif; 
+  }
+  
+  .left-side p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .connect-button {
+    background-color: #EDA600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top:46px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    align-self: flex-start;
+    width: 209px;
+    height:51px;
+    border-radius: 16px;
+    font-family: "Inter", serif; 
+  }
+  
+  .connect-button:hover {
+    border: none;
+    background-color: #cc8a00;
+  }
+  
+  .connect-button:active {
+    border: none;
+    background-color: #b37700;
+    transform: scale(0.98);
+  }
+  
+  .right-side {
+    flex: 0.7; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url('../assets/LandingImg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  }
+  
