@@ -1,0 +1,8 @@
+.page-container{
+    display: flex;
+    flex-direction: row;
+}
+.content-panel{
+    margin-left : 50px;
+    margin-top: 20px;
+}
