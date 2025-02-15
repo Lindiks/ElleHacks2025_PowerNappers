@@ -6,7 +6,7 @@ const ConnectPage = () => {
     <div>
       <h1>Connect Page</h1>
       <p>This is the Connect Page.</p>
-      <Tags></Tags>
+      {/* <Tags></Tags> */}
     </div>
   );
 };
