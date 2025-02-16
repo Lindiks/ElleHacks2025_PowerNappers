@@ -13,14 +13,14 @@ const LandingPage = () => {
   
   return (
     <div className="landing-page">
-      <div className="left-side">
+      <div className="left-side-landing">
         <h1>Socialize with <br></br> Silver Circle</h1>
         <p>
           Our application connects elders together, helping them socialize and avoid loneliness.
         </p>
         <button onClick={handleConnectClick} className="connect-button">Connect Now</button>
       </div>
-      <div className="right-side">
+      <div className="right-side-landing">
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ const SideBar = () => {
         <div className="logo-icon">
             <img src={picture} alt="Silver Circle Logo" />
         </div>
-          <h2>Silver Circle</h2>
+          <h2 className="sidebar_h2">Silver Circle</h2>
         </div>
   
         {/* Navigation Links */}

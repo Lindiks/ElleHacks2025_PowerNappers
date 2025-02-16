@@ -1,8 +1,9 @@
-.page-container{
+.page-container {
     display: flex;
-    flex-direction: row;
-}
-.content-panel{
-    margin-left : 50px;
-    margin-top: 20px;
+  }
+  
+.content-panel {
+    flex: 1;
+    margin-left: 25%; /* Adjust this value to match the width of the sidebar */
+    padding: 20px;
 }

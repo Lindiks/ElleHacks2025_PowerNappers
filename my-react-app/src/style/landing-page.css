@@ -18,7 +18,7 @@
     width: 100vw;
   }
   
-  .left-side {
+  .left-side-landing {
     flex: 0.4; /* 40% of the width */
     display: flex;
     flex-direction: column;
@@ -26,14 +26,14 @@
     padding: 6em;
   }
   
-  .left-side h1 {
+  .left-side-landing h1 {
     font-size: 64px;
     margin-bottom: 20px;
     font-weight: normal;
     font-family: "Noto Sans Gujarati", serif; 
   }
   
-  .left-side p {
+  .left-side-landing p {
     font-size: 1.2rem;
     margin-bottom: 20px;
   }
@@ -65,7 +65,7 @@
     transform: scale(0.98);
   }
   
-  .right-side {
+  .right-side-landing {
     flex: 0.7; 
     display: flex;
     justify-content: center;
