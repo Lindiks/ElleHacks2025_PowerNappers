@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import SideBar from '../Components/SideBar.jsx';
 import ConnectCard from '../Components/ConnectCard.jsx';
+import NavBar from '../Components/NavBar.jsx';
 import "../style/ContentPage.css"
 
 import profilePic1 from '../assets/profilePic1.jpg';
@@ -77,6 +78,7 @@ const ConnectPage = () => {
     <div className='page-container'>
       <SideBar />
       <div className="content-panel">
+        <NavBar/>
         <h1>Connect Page</h1>
         <p>This is the Connect Page.</p>
         {users.map((user, index) => (

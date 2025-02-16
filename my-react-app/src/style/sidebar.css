@@ -54,10 +54,10 @@
     color: white;
   }
   
-  .active {
+  /* .active {
     background-color: #5E726F;
   }
-  
+   */
   /* Message Center with Badge */
   .message-center {
     position: relative;
