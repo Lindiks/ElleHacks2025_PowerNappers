@@ -134,3 +134,17 @@
     font-family: "Inter", serif;
     font-size: 1rem;
   }
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    font-size:20px;
+    font-family: "Inter", serif;
+    font-weight:normal;
+  }
+  
+  .checkbox {
+    margin-right: 10px;
+    transform: scale(1.5);
+  }

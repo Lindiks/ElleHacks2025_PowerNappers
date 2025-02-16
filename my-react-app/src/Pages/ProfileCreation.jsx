@@ -59,6 +59,19 @@ const ProfilePage = () => {
         <p>Based on your profile, have generative AI write a short biography based on your personal information and interests. Feel free to edit the text once it’s done generating! If not, feel free to write your own bio.</p>
         
         <textarea className="bio-textarea" placeholder="Write your biography here..."></textarea>
+
+        <div className="checkbox-group">
+          <h2>Additional Care</h2>
+          <label>
+            <input type="checkbox" className="checkbox" />
+            Care Taker Assistance
+          </label>
+          <label>
+            <input type="checkbox" className="checkbox" />
+            Limited Accessibility
+          </label>
+        </div>
+        
         <button onClick={handleCompleteProfile} className="connect-button">Complete</button>
       </div>
     </div>
