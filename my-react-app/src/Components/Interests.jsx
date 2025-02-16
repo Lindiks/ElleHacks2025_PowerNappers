@@ -1,9 +1,9 @@
 import { ToggleButton, ToggleButtonGroup } from '@mui/material';
 import * as React from 'react';
 
-const interestArr = ["Nature", "Cooking", "Gardening", "Fishing", "Crochet"]
+// const interestArr = ["Nature", "Cooking", "Gardening", "Fishing", "Crochet"]
 
-export default function UserTags() {
+export default function UserTags({ interestArr }) {
   const [availability, setAvailability] = React.useState([]);
 
   const handleAvailability = (event, newAvailability) => {
