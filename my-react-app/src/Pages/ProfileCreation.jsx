@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../style/profile-creation.css';
 import Tags from '../Components/Tags'
+import Interests from '../Components/Interests'
 
 const ProfilePage = () => {
   const [image, setImage] = useState(null);
@@ -50,7 +51,7 @@ const ProfilePage = () => {
         <h2>My Availability</h2>
         <Tags/>
         <h2>My Interests</h2>
-        {/* Generate tags when done - searh n create potentially  */}
+        <Interests/>
         <div className="bio">
             <h2>Easy Bio</h2>
             <button onClick={handleGenerateBio} className="upload-button">Generate Biography</button>
