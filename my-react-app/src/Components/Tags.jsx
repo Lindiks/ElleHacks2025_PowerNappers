@@ -14,8 +14,7 @@ export default function UserTags() {
 
   return (
     <div className="p-4 max-w-md mx-auto space-y-4">
-      <h2 className="text-xl font-semibold">Set Your Availability</h2>
-      
+     
       <ToggleButtonGroup
         value={availability}
         onChange={handleAvailability}
