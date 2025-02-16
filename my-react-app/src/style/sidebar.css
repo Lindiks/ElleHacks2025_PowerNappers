@@ -1,0 +1,90 @@
+.sidebar {
+    flex: 0.25;
+    height: 100vh;
+    background-color: #5E726F;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed; /* Keep the sidebar fixed */
+    top: 0; /* Ensure the sidebar is positioned at the top */
+    left: 0; /* Ensure the sidebar is positioned at the left */
+    width: 20%; /* Adjust the width as needed */
+  }
+  
+  /* Logo Section */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .logo-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s; /* Adding smooth transition */
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 2.8em;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    /* transition: background 0.3s; */
+  }
+  
+  .nav-item:hover {
+    background-color: #AFC3AA;
+    color: white;
+  }
+  
+  .active {
+    background-color: #5E726F;
+  }
+  
+  /* Message Center with Badge */
+  .message-center {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .badge {
+    background-color: #f6ad55;
+    /* Yellow */
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+  }
+  
+  .logo-icon img {
+    width: 2vw;
+    height: 4vh;
+    background: transparent;
+  }
+  
+  .sidebar_h2 {
+    font-size: 32px;
+    font-weight: normal;
+  }
