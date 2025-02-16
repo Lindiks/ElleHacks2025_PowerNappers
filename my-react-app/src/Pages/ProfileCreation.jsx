@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import '../style/profile-creation.css';
 import Tags from '../Components/Tags'
 import Interests from '../Components/Interests'
+import Collapsible from '../Components/Collapsible'
 
 const ProfilePage = () => {
   const [image, setImage] = useState(null);
@@ -51,7 +52,8 @@ const ProfilePage = () => {
         <h2>My Availability</h2>
         <Tags/>
         <h2>My Interests</h2>
-        <Interests/>
+        <Interests interestArr = {["Nature", "Cooking", "Gardening", "Crochet", "Art", "Photography", "Bird Watching", "Reading", "Chess", "Cards"]}/> 
+        <Collapsible></Collapsible>
         <div className="bio">
             <h2>Easy Bio</h2>
             <button onClick={handleGenerateBio} className="upload-button">Generate Biography</button>

@@ -4,11 +4,17 @@ import * as React from 'react';
 // const interestArr = ["Nature", "Cooking", "Gardening", "Fishing", "Crochet"]
 
 export default function UserTags({ interestArr }) {
+    let  inter = []
   const [availability, setAvailability] = React.useState([]);
 
   const handleAvailability = (event, newAvailability) => {
     if (newAvailability !== null) {
+        // inter.push()
+        
       setAvailability(newAvailability);
+      console.log(newAvailability)
+      inter = newAvailability
+      console.log(inter)   /// this is our selected data 
     }
   };
 

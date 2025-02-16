@@ -9,6 +9,7 @@ export default function UserTags() {
   const handleAvailability = (event, newAvailability) => {
     if (newAvailability !== null) {
       setAvailability(newAvailability);
+      console.log(newAvailability)
     }
   };
 
