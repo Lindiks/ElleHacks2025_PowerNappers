@@ -6,7 +6,7 @@
     "description": "Loves gardening and spending time with family.",
     "tags": ["Fishing", "Cooking", "Camping"],
     "distance": "5 km away",
-    "imageUrl": "../assets/profilePic1.jpg"
+    "imageUrl": "/assets/profilePic1.jpg"
   },
   {
     "firstName": "Kaylee",
@@ -15,7 +15,7 @@
     "description": "Enjoys painting and reading books.",
     "tags": ["Fishing", "Cooking", "Crochet"],
     "distance": "8 km away",
-    "imageUrl": "profilePic1"
+    "imageUrl": "/assets/profilePic2.jpg"
   },
   {
     "firstName": "Alice",
@@ -24,7 +24,7 @@
     "description": "Passionate about cooking and volunteering.",
     "tags": ["Fishing", "Painting", "Dance"],
     "distance": "10 km away",
-    "imageUrl": "profilePic3"
+    "imageUrl": "/assets/profilePic3.jpg"
   },
   {
     "firstName": "Andrew",
@@ -33,6 +33,6 @@
     "description": "Passionate about cooking and volunteering.",
     "tags": ["Cooking", "Puzzels", "Reading"],
     "distance": "15 km away",
-    "imageUrl": "profilePic4"
+    "imageUrl": "/assets/profilePic4.jpg"
   }
 ]
