@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../style/profile-creation.css';
+import Tags from '../Components/Tags'
 
 const ProfilePage = () => {
   const [image, setImage] = useState(null);
@@ -47,7 +48,7 @@ const ProfilePage = () => {
           <input type="text" placeholder="City" className="input-field" />
         </div>
         <h2>My Availability</h2>
-        {/* Generate tags when done */}
+        <Tags/>
         <h2>My Interests</h2>
         {/* Generate tags when done - searh n create potentially  */}
         <div className="bio">
