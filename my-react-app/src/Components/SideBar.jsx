@@ -15,9 +15,9 @@ const SideBar = () => {
   
         {/* Navigation Links */}
         <nav className="nav-links">
-        <Link to="/ProfileCreation" className="nav-item ">Edit Profile</Link>
-        <Link to="/FeedPage" className="nav-item ">Socialize</Link>
-        <Link to="/ConnectPage" className="nav-item message-center ">Message Center</Link>
+        <Link to="/profile-creation" className="nav-item ">Edit Profile</Link>
+        <Link to="/connect" className="nav-item ">Socialize</Link>
+        <Link to="/" className="nav-item message-center ">Message Center</Link>
         <Link to="/" className="nav-item">My Friends</Link>
       </nav>
       </div>
