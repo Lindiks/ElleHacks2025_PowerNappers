@@ -9,7 +9,8 @@ const PORT = process.env.PORT || 3000;
 
 // Use CORS middleware for integration
 const url = {
-  "prod":"https://ellehacks2025-powernappers.pages.dev",
+  // "prod":"https://ellehacks2025-powernappers.pages.dev",
+  "prod":"https://silvercircle.club",
   "dev": "http://localhost:5173"}
 
 app.use(cors({
@@ -24,6 +25,9 @@ app.use(bodyParser.json());
 mongoose.connect('mongodb+srv://admin:admin@silvercircledb.ka6ob.mongodb.net/SilverCircle')
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.error('MongoDB connection error:', err));
+  app.get('/health', (req, res) => {
+    res.status(200).json({ message: 'Server is running!' });
+  });
 
 //CRUD Operations
 //Create (POST)
