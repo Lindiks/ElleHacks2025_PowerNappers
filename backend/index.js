@@ -1,10 +1,19 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const User = require('./models/UserModel.js');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Use CORS middleware for integration
+app.use(cors({
+  origin: 'http://localhost:3000',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'] //might need to change to have domain name here too
+}));
+
 app.use(bodyParser.json());
 
 // Connect to MongoDB

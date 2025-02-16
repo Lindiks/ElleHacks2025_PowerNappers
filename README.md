@@ -16,3 +16,8 @@ Running backend:
 ## populate demo data with `node create-db.js`
 
 ## node index.js
+
+For backend and frontend integration:
+
+## npm install cors
+
