@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 
 // Use CORS middleware for integration
 const url = {
-  "prod":"https://ellehacks2025-powernappers.pages.dev/",
+  "prod":"https://ellehacks2025-powernappers.pages.dev",
   "dev": "http://localhost:5173"}
 
 app.use(cors({
