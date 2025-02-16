@@ -4,6 +4,7 @@ import * as React from 'react';
 const interestArr = ["Nature", "Cooking", "Gardening", "Fishing", "Crochet"]
 
 export default function UserTags() {
+  
   const [availability, setAvailability] = React.useState([]);
 
   const handleAvailability = (event, newAvailability) => {
