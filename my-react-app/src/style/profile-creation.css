@@ -88,6 +88,7 @@
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 16px;
+    font-size:20px;
   }
   .right-side-form {
     flex: 0.8; 

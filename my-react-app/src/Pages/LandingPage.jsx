@@ -8,7 +8,7 @@ const LandingPage = () => {
     const navigate = useNavigate();
 
     const handleConnectClick = () => {
-      navigate('/connect');
+      navigate('/profile-creation');
     };
   
   return (

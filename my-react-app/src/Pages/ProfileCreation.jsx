@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../style/profile-creation.css';
 
 const ProfilePage = () => {
   const [image, setImage] = useState(null);
+  const navigate = useNavigate();
 
   const handleImageUpload = (event) => {
     const file = event.target.files[0];
@@ -17,6 +19,10 @@ const ProfilePage = () => {
   const handleGenerateBio = () => {
     console.log('Generate Bio');
   };
+  const handleCompleteProfile = () => {
+    navigate('/connect');
+  };
+
 
 
   return (
@@ -52,6 +58,7 @@ const ProfilePage = () => {
         <p>Based on your profile, have generative AI write a short biography based on your personal information and interests. Feel free to edit the text once it’s done generating! If not, feel free to write your own bio.</p>
         
         <textarea className="bio-textarea" placeholder="Write your biography here..."></textarea>
+        <button onClick={handleCompleteProfile} className="connect-button">Complete</button>
       </div>
     </div>
   );
