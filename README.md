@@ -13,4 +13,6 @@ Running backend:
 
 ## cd backend
 
+## populate demo data with `node create-db.js`
+
 ## node index.js

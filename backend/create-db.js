@@ -6,22 +6,28 @@ let allUsers = [];
 //Read the JSON data for "users"
 let data = require(fileName);
 
+mongoose.connect('mongodb+srv://admin:admin@silvercircledb.ka6ob.mongodb.net/SilverCircle')
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.error('MongoDB connection error:', err));
+
+
 //Add all "users"
 data.forEach(u=>{
     console.log(u)
     let newUser = new User();
     newUser._id = new mongoose.Types.ObjectId();
-    // newUser._id = u._id
-    newUser.FirstName = u.FirstName
-    newUser.LastName = u.LastName
-    newUser.Age = u.Age
-    newUser.Address = u.Address
-    newUser.City = u.City
-    newUser.Assistance = u.Assistance
-    newUser.LimitedMobility = u.LimitedMobility
-    newUser.Availability = []
-    newUser.Interests = []
-    newUser.Bio = u.Bio
+    newUser.firstName = u.firstName
+    newUser.lastName = u.lastName
+    newUser.addressge = u.age
+    newUser.address = u.address
+    newUser.city = u.city
+    newUser.assistance = u.assistance
+    newUser.limitedAccesibility = u.limitedAccesibility
+    newUser.availability = u.availability,
+    newUser.tags = u.tags,
+    newUser.description = u.description,
+    newUser.distance = u.distance,
+    newUser.imageUrl = u.imageUrl
 
   allUsers.push(newUser)
 })

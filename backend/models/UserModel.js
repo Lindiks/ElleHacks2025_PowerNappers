@@ -4,16 +4,18 @@ const Schema = mongoose.Schema;
 
 let userSchema = Schema({
     _id: ObjectId,
-    FirstName: String, 
-    LastName: String,
-    Age: Number,
-    Address: String,
-    City: String,
-    Assistance: Boolean,
-    LimitedMobility: Boolean,
-    Availability: [String],
-    Interests: [String],
-    Bio: String
+    firstName: String, 
+    lastName: String,
+    age: Number,
+    address: String,
+    city: String,
+    assistance: Boolean,
+    limitedAccesibility: Boolean,
+    availability: [String],
+    tags: [String],
+    description: String,
+    distance: String,
+    imageUrl: String
 })
 
 module.exports = mongoose.model("User", userSchema);

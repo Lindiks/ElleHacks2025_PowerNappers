@@ -1,54 +1,38 @@
 [
   {
-    "_id": "65b8e4a1f0a5c12d3c89abcd",
-    "FirstName": "John",
-    "LastName": "Doe",
-    "Age": 78,
-    "Address": "432 Google Drive",
-    "City": "Whoville",
-    "Assistance": true,
-    "LimitedMobility": true,
-    "Availability": ["Monday"], 
-    "Interests": ["Technology", "Music", "Hiking"],
-    "Bio": "A retired engineer who loves hiking and playing guitar."
+    "firstName": "Robert",
+    "lastName": "Dorsey",
+    "age": 65,
+    "description": "Loves gardening and spending time with family.",
+    "tags": ["Fishing", "Cooking", "Camping"],
+    "distance": "5 km away",
+    "imageUrl": "profilePic2"
   },
   {
-    "_id": "65b8e4a1f0a5c12d3c89abcd",
-    "FirstName": "John",
-    "LastName": "Doe",
-    "Age": 78,
-    "Address": "432 Google Drive",
-    "City": "Whoville",
-    "Assistance": true,
-    "LimitedMobility": true,
-    "Availability": ["Monday"], 
-    "Interests": ["Technology", "Music", "Hiking"],
-    "Bio": "A retired engineer who loves hiking and playing guitar."
+    "firstName": "Kaylee",
+    "lastName": "Yuen",
+    "age": 70,
+    "description": "Enjoys painting and reading books.",
+    "tags": ["Fishing", "Cooking", "Crochet"],
+    "distance": "8 km away",
+    "imageUrl": "profilePic1"
   },
   {
-    "_id": "65b8e4a1f0a5c12d3c89abcd",
-    "FirstName": "John",
-    "LastName": "Doe",
-    "Age": 78,
-    "Address": "432 Google Drive",
-    "City": "Whoville",
-    "Assistance": true,
-    "LimitedMobility": true,
-    "Availability": ["Monday"], 
-    "Interests": ["Technology", "Music", "Hiking"],
-    "Bio": "A retired engineer who loves hiking and playing guitar."
+    "firstName": "Alice",
+    "lastName": "Johnson",
+    "age": 68,
+    "description": "Passionate about cooking and volunteering.",
+    "tags": ["Fishing", "Painting", "Dance"],
+    "distance": "10 km away",
+    "imageUrl": "profilePic3"
   },
   {
-    "_id": "65b8e4a1f0a5c12d3c89abcd",
-    "FirstName": "John",
-    "LastName": "Doe",
-    "Age": 78,
-    "Address": "432 Google Drive",
-    "City": "Whoville",
-    "Assistance": true,
-    "LimitedMobility": true,
-    "Availability": ["Monday"], 
-    "Interests": ["Technology", "Music", "Hiking"],
-    "Bio": "A retired engineer who loves hiking and playing guitar."
+    "firstName": "Andrew",
+    "lastName": "Rivera",
+    "age": 68,
+    "description": "Passionate about cooking and volunteering.",
+    "tags": ["Cooking", "Puzzels", "Reading"],
+    "distance": "15 km away",
+    "imageUrl": "profilePic4"
   }
 ]
