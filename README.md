@@ -9,3 +9,8 @@ Running React Website commands:
 
 ## navigate to `http://localhost:####/` in browser
 
+Running backend:
+
+## cd backend
+
+## node index.js
