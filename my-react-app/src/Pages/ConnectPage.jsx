@@ -80,7 +80,9 @@ const ConnectPage = () => {
       <div className="content-panel">
         <NavBar/>
         <h1>Connect Page</h1>
-        <p>This is the Connect Page.</p>
+        <p className="short-connect-description">
+          Find and connect with people who <strong>share your interests</strong> and are <strong>nearby</strong>. These potential connections are sorted by the most amount of shared interests and distance, making it easy to find the best matches for <strong>socializing</strong>. You can also request services for <strong>caretakers</strong> and <strong>ride services</strong> to facilitate your meetups.
+        </p>
         {users.map((user, index) => (
           <ConnectCard key={index} user={user} />
         ))}
