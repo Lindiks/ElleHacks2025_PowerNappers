@@ -1,5 +1,6 @@
 import React from 'react';
 import '../style/connect-card.css';
+import '../Components/NavBar.jsx'
 
 const ConnectCard = ({ user }) => {
   const getTagStyle = (tag) => {

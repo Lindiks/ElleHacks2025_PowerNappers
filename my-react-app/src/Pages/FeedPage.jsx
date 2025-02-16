@@ -1,6 +1,7 @@
 import React from 'react';
 import SideBar from '../Components/SideBar.jsx';
 import FeedCard from '../Components/FeedCard.jsx';
+import NavBar from '../Components/NavBar.jsx';
 import "../style/ContentPage.css";
 
 import besties from '../assets/waiting-with-besties.jpg';
@@ -50,7 +51,8 @@ const FeedPage = () => {
     <div className='page-container'>
       <SideBar />
       <div className="content-panel">
-        <h1>FeedPage</h1>
+        <NavBar/>
+        <h1>My Feed</h1>
         {users.map((user, index) => (
           <FeedCard key={index} user={user} />
         ))}

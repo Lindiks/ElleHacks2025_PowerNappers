@@ -2,6 +2,7 @@ import React from 'react';
 
 import SideBar from '../Components/SideBar.jsx';
 import ConnectCard from '../Components/ConnectCard.jsx';
+import NavBar from '../Components/NavBar.jsx';
 import "../style/ContentPage.css"
 
 import profilePic1 from '../assets/profilePic1.jpg';
@@ -54,8 +55,11 @@ const ConnectPage = () => {
     <div className='page-container'>
       <SideBar />
       <div className="content-panel">
-        <h1>Connect Page</h1>
-        <p>This is the Connect Page.</p>
+        <NavBar/>
+        <h1>Connect </h1>
+        <p className="short-connect-description">
+          Find and connect with people who <strong>share your interests</strong> and are <strong>nearby</strong>. These potential connections are sorted by the most amount of shared interests and distance, making it easy to find the best matches for <strong>socializing</strong>. You can also request services for <strong>caretakers</strong> and <strong>ride services</strong> to facilitate your meetups.
+        </p>
         {users.map((user, index) => (
           <ConnectCard key={index} user={user} />
         ))}
