@@ -1,82 +1,66 @@
+import { ToggleButton, ToggleButtonGroup } from '@mui/material';
 import * as React from 'react';
-import ToggleButton from '@mui/material/ToggleButton';
-import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 
 const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-const activities = ["Nature", "Cooking", "Gardens", "Fishing", "Baking"];
 
 export default function UserTags() {
   const [availability, setAvailability] = React.useState([]);
-  const [interests, setInterests] = React.useState([]);
 
   const handleAvailability = (event, newAvailability) => {
-    setAvailability(newAvailability);
-  };
-
-  const handleInterest = (event, newInterests) => {
-    setInterests(newInterests);
+    if (newAvailability !== null) {
+      setAvailability(newAvailability);
+    }
   };
 
   return (
     <div className="p-4 max-w-md mx-auto space-y-4">
       <h2 className="text-xl font-semibold">Set Your Availability</h2>
+      
       <ToggleButtonGroup
         value={availability}
         onChange={handleAvailability}
         aria-label="days of the week"
+        exclusive={false} 
+        
+        sx={{ 
+          display: 'flex', 
+          flexWrap: 'wrap', 
+          gap: '10px',
+          borderRadius: '12px', // Ensures group doesn’t override button corners
+          '& .MuiToggleButtonGroup-grouped': {
+            margin: '0 !important', // Ensures no unwanted margin
+            borderRadius: '12px !important', // Forces all buttons to have rounded corners
+            border: '2px solid #5F726F !important', // Ensures full borders are visible
+          },
+          '& .MuiToggleButtonGroup-grouped:not(:first-of-type)': {
+            borderLeft: '2px solid #5F726F !important', // Restores left border on grouped buttons
+          }
+          
+        }}
       >
         {daysOfWeek.map((day) => (
           <ToggleButton
             key={day}
             value={day}
             aria-label={day}
+            disableRipple
+
             sx={{
-              borderRadius: '16px', // Make buttons round
-              padding: '8px 16px',
+              padding: '5px 10px',
+              border: '2px solid #5F726F',
+              borderRadius: '12px !important', // Ensures each button remains rounded
+              backgroundColor: 'transparent',
               '&.Mui-selected': {
-                backgroundColor: '#1976d2', // Highlighted color
-                color: 'white', // Text color when highlighted
-              },
-              '&.MuiToggleButton-root': {
-                borderColor: '#1976d2', // Border color
+                backgroundColor: '#5F726F', 
+                color: 'white',
               },
               '&:hover': {
-                backgroundColor: '#e3f2fd', // Light hover effect
+                backgroundColor: '#5F726F',
+                color: 'white',
               },
             }}
           >
             {day}
-          </ToggleButton>
-        ))}
-      </ToggleButtonGroup>
-
-      <h2 className="text-xl font-semibold">Choose Your Interests</h2>
-      <ToggleButtonGroup
-        value={interests}
-        onChange={handleInterest}
-        aria-label="interests"
-      >
-        {activities.map((activity) => (
-          <ToggleButton
-            key={activity}
-            value={activity}
-            aria-label={activity}
-            sx={{
-              borderRadius: '16px', // Make buttons round
-              padding: '8px 16px',
-              '&.Mui-selected': {
-                backgroundColor: '#388e3c', // Highlighted color for interests
-                color: 'white', // Text color when highlighted
-              },
-              '&.MuiToggleButton-root': {
-                borderColor: '#388e3c', // Border color for interests
-              },
-              '&:hover': {
-                backgroundColor: '#c8e6c9', // Light hover effect for interests
-              },
-            }}
-          >
-            {activity}
           </ToggleButton>
         ))}
       </ToggleButtonGroup>
