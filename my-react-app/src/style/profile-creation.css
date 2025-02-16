@@ -99,7 +99,7 @@
   .right-side-form h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #5E726F;
+    color: black;
     font-family: "Inter", serif;
     font-weight: normal;
   }
@@ -117,7 +117,8 @@
     margin-top: 20px;
     font-family: "Inter", serif; 
     font-weight: normal;
-    color: #5E726F;
+    color: black;
+    font-size: 24px;
   }
   .bio{
     display: flex;

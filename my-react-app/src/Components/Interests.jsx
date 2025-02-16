@@ -1,44 +1,35 @@
+// filepath: /c:/Users/veron/Dropbox/My PC (VeronicasPC)/Documents/GitHub/ElleHacks2025_PowerNappers/my-react-app/src/Components/Interests.jsx
 import { ToggleButton, ToggleButtonGroup } from '@mui/material';
 import * as React from 'react';
 
-// const interestArr = ["Nature", "Cooking", "Gardening", "Fishing", "Crochet"]
+export default function UserTags({ interestArr, setInterests }) {
+  const [selectedInterests, setSelectedInterests] = React.useState([]);
 
-export default function UserTags({ interestArr }) {
-    let  inter = []
-  const [availability, setAvailability] = React.useState([]);
-
-  const handleAvailability = (event, newAvailability) => {
-    if (newAvailability !== null) {
-        // inter.push()
-        
-      setAvailability(newAvailability);
-      console.log(newAvailability)
-      inter = newAvailability
-      console.log(inter)   /// this is our selected data 
-    }
+  const handleInterestChange = (event, newInterests) => {
+    setSelectedInterests(newInterests);
+    setInterests(newInterests);
   };
 
   return (
     <div className="p-4 max-w-md mx-auto space-y-4">
       <ToggleButtonGroup
-        value={availability}
-        onChange={handleAvailability}
+        value={selectedInterests}
+        onChange={handleInterestChange}
         aria-label="Interest"
         exclusive={false} 
         sx={{ 
           display: 'flex', 
           flexWrap: 'wrap', 
           gap: '10px',
-          borderRadius: '20px', // Ensures group doesn’t override button corners
+          borderRadius: '20px',
           '& .MuiToggleButtonGroup-grouped': {
-            margin: '0 !important', // Ensures no unwanted margin
-            borderRadius: '20px !important', // Forces all buttons to have rounded corners
-            border: '2px solid #5F726F !important', // Ensures full borders are visible
+            margin: '0 !important',
+            borderRadius: '20px !important',
+            border: '2px solid #5F726F !important',
           },
           '& .MuiToggleButtonGroup-grouped:not(:first-of-type)': {
-            borderLeft: '2px solid #5F726F !important', // Restores left border on grouped buttons
+            borderLeft: '2px solid #5F726F !important',
           }
-          
         }}
       >
         {interestArr.map((interest) => (
@@ -50,7 +41,7 @@ export default function UserTags({ interestArr }) {
             sx={{
               padding: '5px 10px',
               border: '2px solid #5F726F',
-              borderRadius: '20px !important', // Ensures each button remains rounded
+              borderRadius: '20px !important',
               backgroundColor: 'transparent',
               '&.Mui-selected': {
                 backgroundColor: '#5F726F', 

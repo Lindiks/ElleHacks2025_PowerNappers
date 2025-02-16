@@ -1,54 +1,47 @@
+
 import { ToggleButton, ToggleButtonGroup } from '@mui/material';
 import * as React from 'react';
 
-const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+export default function Tags({ setAvailability }) {
+  const [selectedAvailability, setSelectedAvailability] = React.useState([]);
 
-export default function UserTags() {
-  const [availability, setAvailability] = React.useState([]);
-
-  const handleAvailability = (event, newAvailability) => {
-    if (newAvailability !== null) {
-      setAvailability(newAvailability);
-      console.log(newAvailability)
-    }
+  const handleAvailabilityChange = (event, newAvailability) => {
+    setSelectedAvailability(newAvailability);
+    setAvailability(newAvailability);
   };
 
   return (
     <div className="p-4 max-w-md mx-auto space-y-4">
-     
       <ToggleButtonGroup
-        value={availability}
-        onChange={handleAvailability}
-        aria-label="days of the week"
+        value={selectedAvailability}
+        onChange={handleAvailabilityChange}
+        aria-label="Availability"
         exclusive={false} 
-        
         sx={{ 
           display: 'flex', 
           flexWrap: 'wrap', 
           gap: '10px',
-          borderRadius: '12px', // Ensures group doesn’t override button corners
+          borderRadius: '20px',
           '& .MuiToggleButtonGroup-grouped': {
-            margin: '0 !important', // Ensures no unwanted margin
-            borderRadius: '12px !important', // Forces all buttons to have rounded corners
-            border: '2px solid #5F726F !important', // Ensures full borders are visible
+            margin: '0 !important',
+            borderRadius: '20px !important',
+            border: '2px solid #5F726F !important',
           },
           '& .MuiToggleButtonGroup-grouped:not(:first-of-type)': {
-            borderLeft: '2px solid #5F726F !important', // Restores left border on grouped buttons
+            borderLeft: '2px solid #5F726F !important',
           }
-          
         }}
       >
-        {daysOfWeek.map((day) => (
+        {["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"].map((day) => (
           <ToggleButton
             key={day}
             value={day}
             aria-label={day}
             disableRipple
-
             sx={{
               padding: '5px 10px',
               border: '2px solid #5F726F',
-              borderRadius: '12px !important', // Ensures each button remains rounded
+              borderRadius: '20px !important',
               backgroundColor: 'transparent',
               '&.Mui-selected': {
                 backgroundColor: '#5F726F', 
