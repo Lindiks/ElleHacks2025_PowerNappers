@@ -13,14 +13,13 @@
 	"dependencies": {
 		"@emotion/react": "^11.14.0",
 		"@emotion/styled": "^11.14.0",
+		"@google/generative-ai": "0.21.0",
 		"@mui/material": "^6.4.4",
+		"@types/react-transition-group": "^4.4.12",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
 		"react-router-dom": "^7.1.5",
-		"@types/react-transition-group": "^4.4.12",
-		"react-transition-group": "^4.4.5",
-		"@google/generative-ai": "0.21.0"
-		
+		"react-transition-group": "^4.4.5"
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.17.0",

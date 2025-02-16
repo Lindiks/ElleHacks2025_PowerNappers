@@ -11,11 +11,14 @@ import profilePic4 from '../assets/profilePic4.jpg';
 
 const ConnectPage = () => {
   const [users, setUsers] = useState([]);
+  const url = {
+    "prod":"https://ellehacks2025-powernappers.onrender.com/",
+    "dev": "http://localhost:3000/"}
 
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await fetch("http://localhost:3000/users");
+        const response = await fetch(url["prod"] + "users");
         if (!response.ok) {
           throw new Error("Failed to fetch users");
         }

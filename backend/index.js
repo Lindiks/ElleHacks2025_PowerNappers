@@ -8,8 +8,12 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Use CORS middleware for integration
+const url = {
+  "prod":"https://5421a9fd.ellehacks2025-powernappers.pages.dev/",
+  "dev": "http://localhost:5173"}
+
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: url['prod'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'] //might need to change to have domain name here too
 }));

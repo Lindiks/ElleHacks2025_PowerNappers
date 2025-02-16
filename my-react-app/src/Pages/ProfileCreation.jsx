@@ -18,6 +18,10 @@ const ProfilePage = () => {
   const [bio, setBio] = useState('');
   const navigate = useNavigate();
 
+  const url = {
+    "prod":"https://ellehacks2025-powernappers.onrender.com/",
+    "dev": "http://localhost:3000/"}
+
   const handleImageUpload = (event) => {
     const file = event.target.files[0];
     const reader = new FileReader();
@@ -66,7 +70,7 @@ const ProfilePage = () => {
     };
   
     try {
-      const response = await fetch('http://localhost:3000/', {
+      const response = await fetch(url['prod'], {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

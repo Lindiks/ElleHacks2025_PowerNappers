@@ -14,9 +14,13 @@ const handleCompleteProfile = async () => {
         limitedAccessibility: false
       }
     };
+
+    const url = {
+      "prod":"https://ellehacks2025-powernappers.onrender.com/",
+      "dev": "http://localhost:3000/"}
   
     try {
-      const response = await fetch('localhost:3000/', {
+      const response = await fetch(url['prod'], {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
