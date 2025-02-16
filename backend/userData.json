@@ -6,7 +6,7 @@
     "description": "Loves gardening and spending time with family.",
     "tags": ["Fishing", "Cooking", "Camping"],
     "distance": "5 km away",
-    "imageUrl": "profilePic2"
+    "imageUrl": "../assets/profilePic1.jpg"
   },
   {
     "firstName": "Kaylee",

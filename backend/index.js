@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 
 // Use CORS middleware for integration
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'http://localhost:5173',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'] //might need to change to have domain name here too
 }));
@@ -72,7 +72,7 @@ app.post('/', async (req, res) => {
 app.get('/users', async (req, res) => {
   try {
     const users = await User.find();
-    res.status(200).json({ message: 'Users currently in Database:', users });
+    res.status(200).json({users});
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: error.message });

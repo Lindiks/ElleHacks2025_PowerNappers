@@ -1,5 +1,5 @@
-import React from 'react';
-
+// import React from 'react';
+import React, { useEffect, useState } from "react";
 import SideBar from '../Components/SideBar.jsx';
 import ConnectCard from '../Components/ConnectCard.jsx';
 import "../style/ContentPage.css"
@@ -10,7 +10,27 @@ import profilePic3 from '../assets/profilePic3.jpg';
 import profilePic4 from '../assets/profilePic4.jpg';
 
 const ConnectPage = () => {
-  const users = [
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const response = await fetch("http://localhost:3000/users");
+        if (!response.ok) {
+          throw new Error("Failed to fetch users");
+        }
+        const data = await response.json();
+        setUsers(data["users"]);
+        console.log(data["users"]);
+      } catch (error) {
+        console.error("Error:", error);
+      }
+    };
+
+    fetchUsers();
+  }, []);
+  
+  const userxs = [
     {
       firstName: 'Robert',
       lastName: 'Dorsey',
