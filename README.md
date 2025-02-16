@@ -9,3 +9,10 @@ Running React Website commands:
 
 ## navigate to `http://localhost:####/` in browser
 
+Running backend:
+
+## cd backend
+
+## populate demo data with `node create-db.js`
+
+## node index.js
