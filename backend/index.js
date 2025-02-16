@@ -16,10 +16,10 @@ mongoose.connect('mongodb+srv://admin:admin@silvercircledb.ka6ob.mongodb.net/Sil
 //Create (POST)
 app.post('/', async (req, res) => {
   try {
-    const {FirstName, LastName, Age, Assistance, LimitedMobility, Availability, Interests, Bio} = req.body;
+    const {FirstName, LastName, Age, Address, City, Assistance, LimitedMobility, Availability, Interests, Bio} = req.body;
     console.log(req.body);
 
-    if (!FirstName || !LastName || !Age || !Assistance || !LimitedMobility || !Availability || !Interests || !Bio) {
+    if (!FirstName || !LastName || !Age || !Address || !City || !Assistance || !LimitedMobility || !Availability || !Interests || !Bio) {
       return res.status(400).json({error: 'All fields are required.'});
     }
 

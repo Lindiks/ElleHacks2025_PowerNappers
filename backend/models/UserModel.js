@@ -7,6 +7,8 @@ let userSchema = Schema({
     FirstName: String, 
     LastName: String,
     Age: Number,
+    Address: String,
+    City: String,
     Assistance: Boolean,
     LimitedMobility: Boolean,
     Availability: [String],
